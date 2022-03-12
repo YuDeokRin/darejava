@@ -4,7 +4,7 @@ class 요리사 {
     String name = "요리사";
 }
 
-class 홍길동 extends 요리사{
+class 홍길동 extends 요리사 {
     String name = "홍길동";
 }
 
