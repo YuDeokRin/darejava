@@ -9,6 +9,7 @@ public class ArrayEx01 {
         nums[1] = 5;
 
         System.out.println(nums[0]);
-
+        System.out.println(nums[1]);
+        System.out.println(nums[2]); // 배열에 변수를 넣어주지 않으면 0 값이 들어간다.
     }
 }
