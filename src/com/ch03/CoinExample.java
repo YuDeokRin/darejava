@@ -3,7 +3,7 @@ package com.ch03;
 public class CoinExample {
     public static void main(String[] args) {
 
-
+        //최소 동전구하기  500, 100, 50 ,10
         int money = 3680;
         int restMoney = money;
 

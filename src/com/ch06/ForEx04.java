@@ -3,7 +3,7 @@ package com.ch06;
 
 class multiplicationTable{
     void two(){
-        return num;
+
     }
 
     void three(){
@@ -13,6 +13,7 @@ class multiplicationTable{
 
 
 public class ForEx04 {
+    public static void main(String[] args) {
 
-
+    }
 }
