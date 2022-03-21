@@ -32,11 +32,26 @@ class 큰바구니<T>{
 
 public class GenericEx02 {
     public static void main(String[] args) {
+
+        /*
+        큰바구니 s1 = new 큰바구니();
+        s1.data =new 호랑이();
+        System.out.println(s1.data.name);  // s1은 큰바구니를 가리킨다.(타입)  그래서 name부분에서 변수를 찾을 수 없다.
+                                           // 그래서 해결책은 다운캐스팅: 호랑이 h1 = (호랑이)s1.data;
+        //방법1. 다운캐스팅 방법 : 방법1은 너무 불편하다.
+        호랑이 h1 = (호랑이) s1.data;
+        System.out.println(h1.name);
+
+         */
+
+        //다운캐스팅이 매번 하기 비용이 많기 때문에 다른 방법의 해결책 : Generic 사용
+        //방법2. Generic
         큰바구니<호랑이> s1 = new 큰바구니<호랑이>(); // new 큰바구니<호랑이>(); 인스턴스부분 <호랑이>를 생략해줘도된다. new 큰바구니<>();
         s1.data = new 호랑이();
         System.out.println(s1.data.name);
 
         큰바구니<사자> s2 = new 큰바구니<>();
-
+        s2.data = new 사자();
+        System.out.println(s2.data.name);
     }
 }
