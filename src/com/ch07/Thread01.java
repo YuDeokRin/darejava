@@ -69,9 +69,9 @@ public class Thread01 {
         Thread thread1 = new Thread(new ThreadWithRunnable()); // Runnable 인터페이스를 구현하는 방법
         ThreadWithClass  thread2 = new ThreadWithClass(); // Thread 클래스를 상속받는 방법
 
-//        thread1.setPriority(10); // Thread-1의 우선순위를 10으로 변경함  1 ~ 10 까지 있다.
+        thread1.setPriority(10); // Thread-1의 우선순위를 10으로 변경함  1 ~ 10 까지 있다.
 
-//        thread1.start(); //Thread-0 실행
+        thread1.start(); //Thread-0 실행
         thread2.start(); //Thread-1 실행
 
 
