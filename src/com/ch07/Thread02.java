@@ -39,6 +39,16 @@ package com.ch07;
  *
  */
 
+/**
+ * -스레드 그룹(thread group)
+ * 스레드 그룹이란 서로 관련이 있는 스레드를 하나의 그룹으로 묶어 다루기 위한 것
+ * 자바에서 ThreadGroup 클래스를 제공한다.
+ *
+ * 이러한 스레드 그룹은 다른 스레드 그룹을 포함할 수도 있으며, 이렇게 포함된 스레드 그룹은 트리 형태로 연결된다.
+ * 이 상황에서 스레드는 자신이 포함된 스레드 그룹이나 그 하위 그룹에는 접근할 수 있지만, 다른 그룹에는 접근할 수 없다.
+ * 스레드 그룹은 스레드가 접근할 수 있는 범위를 제한하는 보안상으로도 중요한 역할을 하고 있다.
+ *
+ */
 public class Thread02 {
     public static void main(String[] args) {
         Thread thread0 = new Thread(new ThreadWithRunnable());
