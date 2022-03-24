@@ -2,7 +2,10 @@ package com.ch07;
 
 /**
  *  Exception (예외 처리)
- */
+ *  크게 세 가지로 나뉜다.
+ *  1. 컴파일 예외
+ *  2. 런타임 예외
+ *  3. 논리적 예외외 */
 class 총{
     void shoot(){
         System.out.println("총을 발사 했습니다.");
@@ -14,7 +17,7 @@ public class ExceptionEx01 {
 
         /**
          * 컴파일 예외(Java이 알 수 있음)
-         * 대표적인 컴파일 예외 : InterruptedException,
+         * 대표적인 컴파일 예외 : InterruptedException, ClassNotFoundException, NumberFormatException ...
          * 컴파일 예외에서 상위 Exception을 사용할 수 있다.
          * 장점 : 무슨 에러 인지 모르지만 컴파일 에러인지 런타임 에러인지만 인식한다면 상위 Exception을 사용해서 알아보는 방법도 한 가지 방법이다.
          */
