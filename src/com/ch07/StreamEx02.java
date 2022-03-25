@@ -11,7 +11,7 @@ public class StreamEx02 {
             // -문제점
             // A -> 99개 낭비
             // A ~ 문자 500 -> 500개 낭비
-            char[] data = new char[1000];
+            char[] data = new char[4];
             ir.read(data);
             System.out.println(data);
         } catch (Exception e) { // IOException -> Exception(부모클래스로 대체가능)
