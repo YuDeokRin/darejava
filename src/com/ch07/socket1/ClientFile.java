@@ -1,4 +1,4 @@
-package com.ch07.soket1;
+package com.ch07.socket1;
 
 
 import java.io.*;
@@ -20,7 +20,7 @@ public class ClientFile {
             bw = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 
             //키보드 연결
-            System.out.println("3. 키보드 스트 + 버퍼(read) 연결완료--------------------- ");
+            System.out.println("3. 키보드 스트림 + 버퍼(read) 연결완료--------------------- ");
             br = new BufferedReader(new InputStreamReader(System.in));
 
             System.out.println("4. 키보드 메세지 입력 대기중------------------------------");
@@ -37,6 +37,6 @@ public class ClientFile {
     }
 
     public static void main(String[] args) {
-
+        new ClientFile();
     }
 }

@@ -44,6 +44,6 @@ public class ClientFile2 {
     }
 
     public static void main(String[] args) {
-
+        new ClientFile2();
     }
 }

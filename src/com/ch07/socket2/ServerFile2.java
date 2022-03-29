@@ -20,7 +20,6 @@ public class ServerFile2 {
         try{
             serverSocket = new ServerSocket(10000);
 
-
                 System.out.println("2. 서버소켓 생성완료: 클라이언트 접속대기중 -------------------------");
                 socket = serverSocket.accept(); // 클라이언트 접속 대기중 ...
                 System.out.println("3. 클라이언트 연결완료 - buffer 연결완료(read)");

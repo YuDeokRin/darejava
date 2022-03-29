@@ -1,4 +1,4 @@
-package com.ch07.soket1;
+package com.ch07.socket1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

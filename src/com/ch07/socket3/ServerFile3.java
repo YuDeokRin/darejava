@@ -18,11 +18,9 @@ public class ServerFile3 {
     BufferedReader keyboard;
 
     public ServerFile3(){
-        System.out.println("1. 서버소켓 시작---------------------------");
-
+                System.out.println("1. 서버소켓 시작---------------------------");
         try{
-            serverSocket = new ServerSocket(10000);
-
+                serverSocket = new ServerSocket(10000);
 
                 System.out.println("2. 서버소켓 생성완료: 클라이언트 접속대기중 -------------------------");
                 socket = serverSocket.accept(); // 클라이언트 접속 대기중 ...

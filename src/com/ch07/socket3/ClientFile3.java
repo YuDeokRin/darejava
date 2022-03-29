@@ -11,7 +11,6 @@ import java.net.Socket;
 
 public class ClientFile3 {
 
-
     Socket socket;
     BufferedWriter bw;
     BufferedReader keyboard;
@@ -29,7 +28,6 @@ public class ClientFile3 {
             //키보드 연결
             System.out.println("3. 키보드 스트림 + 버퍼(read) 연결완료--------------------- ");
             keyboard = new BufferedReader(new InputStreamReader(System.in));
-
             br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
             //새로운 스레드 역할 (글 읽기)
@@ -43,7 +41,7 @@ public class ClientFile3 {
                 String keyboardMsg = keyboard.readLine();
 
                 //메시지 끝을 알려줘야한다.  --- 알려주는 신호 : \n
-                bw.write(keyboardMsg+"\n");
+                bw.write(keyboardMsg + "\n");
                 bw.flush();
             }
 
@@ -56,7 +54,7 @@ public class ClientFile3 {
 
         @Override
         public void run() {
-            while(){
+            while(true){
                 try {
                     String msg = br.readLine();
                     System.out.println("서버로 부터 받은 메시지 :" + msg);
