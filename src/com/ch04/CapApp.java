@@ -3,7 +3,17 @@ package com.ch04;
 public class CapApp {
     public static void main(String[] args) {
 
-        // new -> 메모리에 할당(heap)
+        Cat c1 = new Cat(); // 고양이 한마리가 heap 공간에 만들어짐
+        System.out.println(c1.name);
+        System.out.println(c1.color);
+
+        Cat c2 = new Cat(); // 고양이 한마리가 heap 공간에 만들어짐
+        System.out.println(c2.name);
+        System.out.println(c2.color);
+
+
+        System.out.println("--------------------------------------------------------");
+        // new -> 메모리에 할당(heap) --> String name, String color
         // Cat() -> 생성자 호출 > 상태를 초기화하기 위해서
         // c1 -> heap 공간을 가르키는 주소
         // Cat 커스텀 타입(개발자가 만든 타입)

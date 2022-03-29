@@ -9,6 +9,11 @@ public class Dog {
     String name = "토끼"; // 변경 가능
     String color = "흰색";  // 변경가능
     final String type = "말티즈"; // 변경 불가능  -> 해결책 : final 변수를 써서 상수로 만들어 준다 .
+
+    /*  디폴트 생성자는 생략되어있다.
+    public Dog() {
+    }
+     */
 }
 
 // 필드, 전역변수(지역변수가 아니다(메서드 내부에서 만들어진 변수가 아니다.)), 상태
